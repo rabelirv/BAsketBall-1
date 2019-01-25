@@ -1,0 +1,9 @@
+<h1><%= @team.name %></h1>
+
+<h2> Team Members </h2>
+<ol>
+<% @user.each do |user| %>
+<li><%= link_to user.name, user %></li>
+<% end %>
+</ol>
+<%= button_to " Join Team", join_team_path, method: :post %><br>

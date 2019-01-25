@@ -1,0 +1,13 @@
+<br>
+<br>
+<%= form_for @team do |f|%>
+
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name, autocomplete: :off %>
+    </li>
+  <%= f.submit "Create Team" %>
+
+
+<% end %>

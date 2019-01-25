@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+
+<%= form_for @user do |f|%>
+
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name, autocomplete: :off %>
+    </li>
+    <li><%=f.label :last_game%>
+    <%= f.date_field :last_game, as: :date, value: f.object.try(:strftime,"%m/%d/%Y"), class: 'form-control' %></li>
+    <li>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </li>
+  </ul>
+
+  <%= f.submit "sign up" %>
+
+<% end %>

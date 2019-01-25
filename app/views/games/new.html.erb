@@ -1,0 +1,10 @@
+<%= form_for @games do |f| %>
+<%= f.label :location%>
+<%= f.collection_select :location_id, @locations, :id, :name %></br>
+<%= f.label :games %>
+<%= f.time_field :recieved,
+value:"%H:%M"%>
+
+
+<%= f.submit "ADD GAME" %>
+<% end %>

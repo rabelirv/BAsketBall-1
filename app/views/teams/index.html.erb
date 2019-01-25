@@ -1,0 +1,10 @@
+<h1>All Teams</h1>
+
+
+<%= button_to " Create Team ", new_team_path, method: :get %>
+
+<ol>
+<% @teams.each do |team| %>
+<li><%= link_to team.name, team %> <%= team.users.count %></li>
+<%end%>
+<ol>

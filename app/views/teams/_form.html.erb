@@ -1,0 +1,7 @@
+  <%= form_for @user do |f| %>
+  <%=f.label :name %>
+  <%=f.text_field :name%>
+  <%=f.label :last_game%>
+  <%= f.date_field :last_game, as: :date, value: f.object.try(:strftime,"%m/%d/%Y"), class: 'form-control' %>
+  <%= f.submit "Create User" %>
+  <%end%>

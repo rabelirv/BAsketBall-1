@@ -1,0 +1,11 @@
+<br>
+<br>
+<%= form_for @userteam do |f| %>
+<%= f.label :user_id %>
+<%= f.text_field : %>
+<%= f.label :team_id %>
+<%= f.collection_select :team_id, @teams, :id, :name %></br>
+
+
+<%= f.submit "Join Team" %>
+<% end %>
