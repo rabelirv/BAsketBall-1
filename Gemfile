@@ -6,6 +6,7 @@ ruby '2.3.3'
 gem 'faker'
 
 gem 'devise'
+gem "autoprefixer-rails"
 
 # gem 'bulma-rails', '~> 0.0.4.1'
 
